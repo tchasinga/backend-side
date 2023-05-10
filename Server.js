@@ -6,7 +6,7 @@ let mongoose = require("mongoose");
 const dataCollection = require('./Routes/dataCollection');
 
 
-const mylink = "mongodb+srv://newdeveloper:jack12345@balolebwami.uxh52yy.mongodb.net/"
+const mylink = "mongodb+srv://newdeveloper:<jack12345>@balolebwami.uxh52yy.mongodb.net/?retryWrites=true&w=majority"
                  
 
 mongoose.connect(mylink).then(() =>{
