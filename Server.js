@@ -3,13 +3,14 @@ require("dotenv").config();
 const app = express();
 const link = "the best is back";
 let mongoose = require("mongoose");
-const dataCollection = require('./Routes/dataCollection'); 
+const dataCollection = require('./Routes/dataCollection');
 
-const mylink = "mongodb+srv://newdeveloper:<jack12345>@balolebwami.uxh52yy.mongodb.net/"
+
+const mylink = "mongodb+srv://newdeveloper:jack12345@balolebwami.uxh52yy.mongodb.net/"
                  
 
 mongoose.connect(mylink).then(() =>{
-    app.listen(process.env.PORT || 4000, () => {
+    app.listen(process.env.PORT || 6010, () => {
         console.log("Now you're Online at Port 4000 Atlas Code");
         
         app.get("/Data", (req, res) => {
