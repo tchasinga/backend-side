@@ -5,7 +5,8 @@ const link = "the best is back";
 let mongoose = require("mongoose");
 const dataCollection = require('./Routes/dataCollection'); 
 
-const mylink = "mongodb+srv://newdeveloper:jack12345@balolebwami.uxh52yy.mongodb.net/?retryWrites=true&w=majority"
+const mylink = "mongodb+srv://newdeveloper:<jack12345>@balolebwami.uxh52yy.mongodb.net/"
+                 
 
 mongoose.connect(mylink).then(() =>{
     app.listen(process.env.PORT || 4000, () => {
