@@ -10,7 +10,7 @@ const mylink = "mongodb+srv://newdeveloper:<jack12345>@balolebwami.uxh52yy.mongo
                  
 
 mongoose.connect(mylink).then(() =>{
-    app.listen(process.env.PORT || 6010, () => {
+    app.listen(process.env.PORT || 4000, () => {
         console.log("Now you're Online at Port 4000 Atlas Code");
         
         app.get("/Data", (req, res) => {
